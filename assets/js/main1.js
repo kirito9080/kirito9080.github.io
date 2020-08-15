@@ -1,3 +1,7 @@
+//----------------------------------------
+//Design By 白色の物语(Whitecolor)
+//Github:https://github.com/Whitestorys
+//----------------------------------------
 (function() {
 	"use strict";
 
