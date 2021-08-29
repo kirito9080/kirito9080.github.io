@@ -36,8 +36,8 @@
 		<p>直连域名不可用可尝试加速域名</p>
                 <p>国内导航地址：https://ciyuanlove.gitee.io</p>
                 <p id="hitokoto">
-			<a id="hitokoto">If the moon smiled, she would resemble you.</a>
-			<a id="from">如果月亮会笑，那么她一定像你一样美！</a>
+			<a id="hitokoto_text">If the moon smiled, she would resemble you.</a>
+			<a id="from_who">如果月亮会笑，那么她一定像你一样美！</a>
 		</p>
                 <div class="row">
                     <button id="kaygb-blog" onclick="window.location.href='https://cylove.cc'" class="btn btn-primary col-lg-4">直连域名(联通、电信推荐)</button>
@@ -89,15 +89,17 @@
             });
         });
     </script>
+    //一言接口
     <script>
-       fetch('https://v1.hitokoto.cn')
+       fetch('https://v1.hitokoto.cn/?c=a&c=b&c=c&c=d')
        .then(response => response.json())
        .then(data => {
        const hitokoto = document.getElementById('hitokoto_text')
-       hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
        hitokoto.innerText = data.hitokoto
-      })
-    .catch(console.error)
+       const from = document.getElementById('from_who')
+       from.innerText = data.from
+       })
+      // .catch(console.error)
     </script>
     <script type="text/Javascript">
     	document.ondragstart = function () {
