@@ -142,7 +142,7 @@ strike {
 
 .photo-bg {
     /* background-image: url(assets/background.jpg); */
-    background-image: url(https://api.ciyuanlove.com/YuiAPI.php);
+    background-image: url(https://api.ciyuanlove.com/api/YuiAPI/YuiAPI.php);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
